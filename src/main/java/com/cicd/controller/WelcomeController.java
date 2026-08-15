@@ -14,4 +14,8 @@ public class WelcomeController {
         return ResponseEntity.ok("Welcome to the CI/CD pipeline!");
     }
 
+    @GetMapping("/hurray")
+    public ResponseEntity<String> hurrayMessage(){
+        return ResponseEntity.ok("Hurray! The CI/CD pipeline is working perfectly!");
+    }
 }
